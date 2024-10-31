@@ -1,0 +1,66 @@
+&CONTROL
+    calculation   = "vc-relax"
+    forc_conv_thr =  1.00000e-05
+    prefix        = "v2o5"
+    pseudo_dir    = "~/pseudos"
+    nstep         = 550
+/
+
+&SYSTEM
+    ecutrho                   =  650
+    ecutwfc                   =  65 
+    ibrav                     =  0 
+    nat                       = 14
+    nspin                     = 1
+    ntyp                      = 2
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    degauss                   = 0.02
+/
+
+&ELECTRONS
+    conv_thr         = 1.00000e-12
+    diago_david_ndim = 4
+    diagonalization  = "david"
+    electron_maxstep = 500
+    mixing_beta      = 0.2
+    mixing_mode      = "local-TF"
+    mixing_ndim      = 8
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+    bfgs_ndim = 2
+/
+
+&CELL
+    cell_dynamics  = "bfgs"
+/
+K_POINTS {automatic}
+ 3 3 1  0 0 0
+
+ATOMIC_SPECIES
+    V   50.94150  V.pbe-spnl-kjpaw_psl.1.0.0.UPF
+    O   15.99940  O.pbe-n-kjpaw_psl.1.0.0.UPF
+
+CELL_PARAMETERS (angstrom)
+   3.571835912   0.000000000   0.000000000
+   0.000000000   4.579195258   0.000000000
+   0.000000000   0.000000000  11.573142331
+
+ATOMIC_POSITIONS (crystal)
+V             0.0000000000        0.3883981762        0.6483677070
+V             0.5000000019        0.6116018276        0.8516322987
+V             0.5000000019        0.6116018276        0.1483677051
+V             0.0000000000        0.3883981762        0.3516322968
+O             0.5000000019        0.4920758422        0.6814432638
+O             0.0000000000        0.5079241616        0.8185567419
+O             0.0000000000        0.5079241616        0.1814432619
+O             0.5000000019        0.4920758422        0.3185567400
+O             0.0000000000        0.0412428480        0.3557950497
+O             0.5000000019        0.9587571558        0.1442049522
+O             0.5000000019        0.9587571558        0.8557950516
+O             0.5000000019        0.5018683266        0.0000000000
+O             0.0000000000        0.4981316771        0.5000000019
+O             0.0000000000        0.0412428480        0.6442049541
+
