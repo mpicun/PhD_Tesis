@@ -1,0 +1,65 @@
+&CONTROL
+    calculation   = "vc-relax"
+    forc_conv_thr =  1.00000e-03
+    prefix        = "v2o5"
+    pseudo_dir    = "~/pseudos"
+    nstep         = 500
+/
+
+&SYSTEM
+    ecutrho                   =  650
+    ecutwfc                   =  65 
+    ibrav                     =  0 
+    nat                       = 14
+    nspin                     = 1
+    ntyp                      = 2
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    degauss                   = 0.02
+/
+
+&ELECTRONS
+    conv_thr         = 1.00000e-10
+    diago_david_ndim = 4
+    diagonalization  = "david"
+    electron_maxstep = 500
+    mixing_beta      = 0.2
+    mixing_mode      = "local-TF"
+    mixing_ndim      = 8
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+    bfgs_ndim = 2
+/
+
+&CELL
+    cell_dynamics  = "bfgs"
+/
+K_POINTS {automatic}
+ 3 3 1  0 0 0
+
+ATOMIC_SPECIES
+    V   50.94150  V.pbesol-spnl-kjpaw_psl.1.0.0.UPF
+    O   15.99940  O.pbesol-n-kjpaw_psl.1.0.0.UPF
+
+CELL_PARAMETERS (angstrom)
+3.618658 0.000000 0.000000
+0.000000 4.797293 0.000000
+0.000000 0.000000 11.551508
+
+ATOMIC_POSITIONS (crystal)
+V  0.000000 0.388267 0.649496  
+V  0.500000 0.611733 0.850504 
+V  0.500000 0.611733 0.149496 
+V  0.000000 0.388267 0.350504 
+O  0.500000 0.488283 0.681836 
+O  0.000000 0.511717 0.818164 
+O  0.000000 0.511717 0.181836 
+O  0.500000 0.488283 0.318164 
+O  0.000000 0.052867 0.354976 
+O  0.500000 0.947133 0.145024 
+O  0.500000 0.947133 0.854976 
+O  0.500000 0.501270 0.000000 
+O  0.000000 0.498730 0.500000 
+O  0.000000 0.052867 0.645024 
