@@ -1,0 +1,46 @@
+&CONTROL
+    calculation   = 'relax'
+    forc_conv_thr =  1.00000e-02
+    prefix        = 'O2'
+    pseudo_dir    = '/home/mpicuntureo/pseudos'
+    nstep         = 500
+/
+&SYSTEM
+    ibrav = 0
+    nat = 2
+    ntyp = 1
+    input_dft = "vdW-DF"
+    ecutwfc = 40.0 
+    ecutrho = 400.0 
+    occupations = 'smearing' 
+    degauss = 0.1
+    smearing = 'gaussian' 
+ /
+ &ELECTRONS
+    electron_maxstep = 500
+    conv_thr = 1.0e-6 
+    mixing_mode = 'plain' 
+    mixing_beta = 0.4 
+ /
+
+&IONS
+    ion_dynamics = "bfgs"
+    bfgs_ndim = 2
+/
+
+
+ATOMIC_SPECIES
+    O   15.99940 O.pbesol-n-kjpaw_psl.1.0.0.UPF 
+ 
+K_POINTS automatic
+1 1 1 0 0 0
+
+CELL_PARAMETERS (angstrom)
+    30.0000000000000000    0.0000000000000000    0.0000000000000000
+     0.0000000000000000   30.0000000000000000    0.0000000000000000
+     0.0000000000000000    0.0000000000000000   30.0000000000000000
+
+
+ATOMIC_POSITIONS (angstrom)
+   O    0.0000000000    0.0000000000    0.0000000000
+   O    0.0000000000    1.2340000000    0.0000000000
