@@ -1,0 +1,16 @@
+&inputph
+  tr2_ph    = 1.0d-14
+  amass(1)  = 50.9415
+  amass(2)  = 15.9994
+  prefix    = "v2o5"
+  outdir    = "outdir"
+  epsil     = .true.
+  trans     = .true.
+  asr       = .true.
+  lraman    = .true.
+  nq1=1, nq2=1, nq3=1
+  fildyn    = "v2o5.dyn"
+  alpha_mix(1) = 0.5
+/
+0.0 0.0 0.0
+

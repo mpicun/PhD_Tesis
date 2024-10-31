@@ -1,0 +1,4 @@
+&input
+ fildyn='v2o5.dyn',
+ asr='crystal'
+/     

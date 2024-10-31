@@ -1,0 +1,86 @@
+
+     Program DYNMAT v.6.7MaX starts on 13Oct2024 at 16:29: 3 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    32 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      32
+
+     Reading Dynamical Matrix from file v2o5.dyn
+     ...Force constants read
+     ...epsilon and Z* read
+     ...Raman cross sections read
+     Acoustic Sum Rule: || Z*(ASR) - Z*(orig)|| =    7.489928E-02
+     Acoustic Sum Rule: ||dyn(ASR) - dyn(orig)||=    3.218543E-03
+     A direction for q was not specified:TO-LO splitting will be absent
+
+     Polarizability (A^3 units)
+     multiply by 0.407074 for Clausius-Mossotti correction
+        70.257272    0.000000    0.000000
+         0.000000   38.966295    0.000000
+         0.000000    0.000000   81.498067
+
+     IR activities are in (D/A)^2/amu units
+     Raman activities are in A^4/amu units
+     multiply Raman by 0.165709 for Clausius-Mossotti correction
+
+# mode   [cm-1]    [THz]      IR          Raman   depol.fact
+    1     -0.00   -0.0000    0.0000         0.0000    0.7417
+    2      0.00    0.0000    0.0000         0.0000    0.6723
+    3      0.00    0.0000    0.0000         0.0000    0.7491
+    4     63.76    1.9114    0.0000         0.0000    0.7319
+    5     71.54    2.1446    0.7203         0.0000    0.7182
+    6     97.99    2.9377    0.0000        15.7905    0.7421
+    7    133.89    4.0139    0.1068         0.0000    0.7480
+    8    136.01    4.0775    0.0000         0.0875    0.7500
+    9    145.83    4.3720    0.0000       558.7591    0.7500
+   10    151.39    4.5387    0.0000        24.8518    0.7500
+   11    188.27    5.6441    0.0000        31.6491    0.6690
+   12    194.97    5.8449    0.0000        18.0028    0.7500
+   13    208.38    6.2470   12.1016         0.0000    0.7492
+   14    230.61    6.9136    0.0000        15.5514    0.7500
+   15    255.90    7.6716    5.3430         0.0000    0.2697
+   16    268.10    8.0375    0.0000         0.0000    0.7426
+   17    282.06    8.4559   24.2534         0.0000    0.7461
+   18    285.38    8.5554    0.0000       324.7506    0.7500
+   19    290.73    8.7159    0.1286         0.0000    0.7500
+   20    291.22    8.7305    0.0000       379.5826    0.7500
+   21    303.57    9.1008    0.0000       107.0161    0.2871
+   22    308.83    9.2585    0.0000        61.3255    0.7500
+   23    333.43    9.9960  114.0489         0.0000    0.4674
+   24    351.02   10.5232    0.0000        71.3042    0.7500
+   25    354.32   10.6222    0.2031         0.0000    0.7447
+   26    400.94   12.0199    0.0000        93.6784    0.0846
+   27    407.61   12.2198   54.7781         0.0000    0.0949
+   28    463.52   13.8959    0.0000       472.5275    0.6920
+   29    471.37   14.1313    6.5492         0.0000    0.7026
+   30    477.59   14.3177    0.0000       125.0470    0.7500
+   31    487.60   14.6180    0.0000         0.0000    0.4945
+   32    493.60   14.7977  199.7472         0.0000    0.4576
+   33    526.84   15.7942    0.0000       253.4687    0.1405
+   34    609.56   18.2741    0.6254         0.0000    0.7490
+   35    686.15   20.5703    0.0000      2800.7669    0.7500
+   36    686.26   20.5737    0.0000       668.9991    0.7500
+   37    774.45   23.2175  101.1643         0.0000    0.0570
+   38    941.94   28.2387    0.0000         0.2680    0.7500
+   39   1012.67   30.3590    0.3650         0.0000    0.0024
+   40   1016.27   30.4670   40.7053         0.0000    0.0024
+   41   1032.04   30.9398    0.0000        14.6111    0.7500
+   42   1034.43   31.0116    0.0000      4426.6882    0.0012
+
+     DYNMAT       :      0.09s CPU      0.10s WALL
+
+
+   This run was terminated on:  16:29: 3  13Oct2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
