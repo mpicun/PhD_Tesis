@@ -1,0 +1,57 @@
+&CONTROL
+    calculation   = "vc-relax"
+    forc_conv_thr =  1.0e-05
+    prefix        = "v2o5"
+    restart_mode  = "restart"
+    pseudo_dir    = "/home/mpicuntureo/pseudos"
+    nstep         = 500
+/
+
+&SYSTEM
+    nat           = 14
+    ntyp          = 2
+    ibrav         = 8
+    A             = 3.57184696670169 
+    B             = 4.88279985980438
+    C             = 11.4797339807021
+    ecutwfc       = 40
+    occupations   = "fixed"
+/
+
+&ELECTRONS
+    conv_thr         = 1.0e-10
+    electron_maxstep = 500
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+    bfgs_ndim = 2
+/
+
+&CELL
+    cell_dynamics  = "bfgs"
+/
+
+ATOMIC_SPECIES
+    V   50.94150  v.nc.upf
+    O   15.99940  o.nc.upf
+
+K_POINTS (automatic)
+ 3 3 1  0 0 0
+
+ATOMIC_POSITIONS (crystal)
+V        0.000000000   0.390814067   0.648740329
+V        0.500000002   0.609185937   0.851259677
+V        0.500000002   0.609185937   0.148740328
+V        0.000000000   0.390814067   0.351259674
+O        0.500000002   0.489703346   0.681560829
+O        0.000000000   0.510296659   0.818439176
+O        0.000000000   0.510296659   0.181560828
+O        0.500000002   0.489703346   0.318439174
+O       -0.000000000   0.067635832   0.355879306
+O        0.500000002   0.932364172   0.144120697
+O        0.500000002   0.932364172   0.855879307
+O        0.500000002   0.501048030  -0.000000000
+O        0.000000000   0.498951974   0.500000002
+O       -0.000000000   0.067635832   0.644120700
+
