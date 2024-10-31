@@ -1,0 +1,49 @@
+&CONTROL
+    calculation   = "scf"
+    prefix        = "v2o5"
+    outdir        = "outdir"
+    pseudo_dir    = "/home/mpicuntureo2/Jobs/test/pseudos"
+    nstep         = 500
+/
+&SYSTEM
+    nat           = 14
+    ntyp          = 2
+    ibrav         = 8
+    A             = 3.57813049363452 
+    B             = 4.4053247853927
+    C             = 11.5436136852566
+    vdw_corr      = "DFT-D"
+    ecutwfc       = 65
+    ecutrho       = 650
+    occupations   = "smearing"
+    smearing      = "gaussian"
+    degauss       =  5.0e-02 
+/
+&ELECTRONS
+    conv_thr         = 1.0e-10
+    electron_maxstep = 500
+/
+ATOMIC_SPECIES
+    V   50.94150  V.pbe-spnl-kjpaw_psl.1.0.0.UPF
+    O   15.99940  O.pbe-n-kjpaw_psl.1.0.0.UPF 
+K_POINTS (automatic)
+ 3 3 1  0 0 0
+ATOMIC_POSITIONS (crystal)
+V             0.0000000000        0.3815960563        0.6490483771
+V             0.5000000021        0.6184039478        0.8509516281
+V             0.5000000021        0.6184039478        0.1490483761
+V            -0.0000000000        0.3815960563        0.3509516260
+O             0.5000000021        0.4919006123        0.6814248452
+O             0.0000000000        0.5080993919        0.8185751601
+O             0.0000000000        0.5080993919        0.1814248441
+O             0.5000000021        0.4919006123        0.3185751580
+O             0.0000000000        0.0198557861        0.3529453211
+O             0.5000000021        0.9801442181        0.1470546820
+O             0.5000000021        0.9801442181        0.8529453221
+O             0.5000000021        0.5079385820        0.0000000000
+O             0.0000000000        0.4920614221        0.5000000021
+O             0.0000000000        0.0198557861        0.6470546841
+
+HUBBARD (ortho-atomic)
+U V-3d 4.0
+
